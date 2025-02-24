@@ -47,7 +47,7 @@ int main() {
     printf("\n ================================================ \n");
     
     printf("Digite o codigo da cidade da carta 2: ");
-    scanf("%d", &codCidade);
+    scanf("%d", &codCidade2);
 
     printf("Digite o nome da cidade da carta 2: ");
     scanf("%s", nomeCidade2);
@@ -83,6 +83,14 @@ int main() {
     printf("\nExtensao territorial da carta 2: %.2F km² \n", area2);
     printf("\nDigite o seu PIB da carta 2: %.2F \n", pib2);
     printf("\nDigite o numero de pontos turisticos da carta 2: %d \n", pontosTuristicos2);
+    
+    printf("Realizando comparacao para ver quem venceu. \n");
+    
+    if(populacao && area && pib && pontosTuristicos > populacao2 && area2 && pib2 && pontosTuristicos2){
+    	printf("Carta 1 venceu!\n");
+    }else{
+    	printf("Carta 2 venceu!\n");
+    }
 
     return 0;
 }
