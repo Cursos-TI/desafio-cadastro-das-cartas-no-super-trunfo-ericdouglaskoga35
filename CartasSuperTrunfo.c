@@ -106,7 +106,7 @@ int main() {
     
     printf("Realizando comparacao para ver quem venceu. \n");
     
-    if(populacao && area && pib && pontosTuristicos > populacao2 && area2 && pib2 && pontosTuristicos2){
+    if(populacao && area && pib && pontosTuristicos && densidadePopulacional && pibPerCapita > populacao2 && area2 && pib2 && pontosTuristicos2 && densidadePopulacional2 && pibPerCapita2){
     	printf("Carta 1 venceu!\n");
     }else{
     	printf("Carta 2 venceu!\n");
